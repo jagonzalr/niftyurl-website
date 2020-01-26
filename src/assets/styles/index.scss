@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap');
+
+$black-color: #110c11;
+$grey-light: #e1e0e0;
+$grey: #e6e6e6;
+$blue: #1b72f9;
+$red: #d90c13;
+$white-color: #ffffff;
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: $white-color;
+  color: $black-color;
+  font-size: 1.1rem;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-weight: 400;
+  height: 100%;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.bold {
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  font-weight: 700;
+}

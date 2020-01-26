@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jose Antonio  Gonzalez Rodriguez" />
+    <meta
+      name="description"
+      content="Remember which URLs are useful when revisiting them."
+    />
+    <meta name="theme-color" content="#2e27f8" />
+    <meta name="keywords" content="Nifty URL, Chrome Extension" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Nifty URL</title>
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+      #update-page-message {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 10px 15px;
+        text-align: center;
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 0;
+        background: #130708;
+        color: #ffffff;
+        z-index: 2000;
+      }
+      #update-page-message a {
+        color: #ffffff;
+        cursor: pointer;
+      }
+      #update-page-message.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s;
+        animation: fadein 0.5s;
+      }
+    </style>
+    <style type="text/css">
+      .lds-ring {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      }
+      .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 51px;
+        height: 51px;
+        margin: 6px;
+        border: 6px solid #130708;
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #130708 transparent transparent transparent;
+      }
+      .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+      }
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="update-page-message">
+      A new version is available. Click <a id="reload-page"><b>here</b></a> to
+      update.
+    </div>
+    <div id="app" role="main">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
